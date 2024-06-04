@@ -35,6 +35,21 @@ end
 
 Copy the contents of `dist/.*ps1` to `~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1`.
 
+**Nix Home Manager**
+
+```nix
+let
+  theme = pkgs.fetchFromGitHub {
+    owner = "dgabka";
+    repo = "labyrinth-fzf";
+    rev = "9fe783b027f8c35c04b686ff4cb1a9777e5df73d";
+    sha256 = "sha256-/HJ8XEHoqxfOHmqmCkIuU7KCBqlzsj7reTjo3Fo7UGk=";
+  };
+in {
+  programs.fzf.colors = import "${theme}/dist/labyrinth-dusk.nix"
+}
+```
+
 ## Gallery
 
 **Labyrinth Gloom**
