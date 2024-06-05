@@ -4,20 +4,27 @@ Discover Labyrinth, a serene color scheme inspired by hidden pathways and mossy 
 
 Labyrinth provides four distinct variants with varying levels of contrast and color vibrancy to suit your preferences:
 
- - Dusk: The most contrasty variant, perfect for those who prefer sharp distinctions and vibrant colors.
- - Shade: A balanced variant, offering a comfortable middle ground with moderate contrast and vibrancy.
- - Gloom: A softer variant with reduced contrast, ideal for a more subdued and relaxed visual experience.
- - Mist: The least contrasty variant, featuring the most gentle and subtle tones for a calm and unobtrusive interface.
+ - **Gloom**: The most contrasty variant, perfect for those who prefer sharp distinctions and vibrant colors.
+ - **Dusk**: A balanced variant, offering a comfortable middle ground with moderate contrast and vibrancy.
+ - **Shade**: A softer variant with reduced contrast, ideal for a more subdued and relaxed visual experience.
+ - **Mist**: The least contrasty variant, featuring the most gentle and subtle tones for a calm and unobtrusive interface.
 
 Whether you're coding, designing, or simply exploring new aesthetics, Labyrinth adapts to your needs with its harmonious palette.
 
 ## Usage
 
-**Bash-like shells**
+> [!IMPORTANT]
+> Theme is utilizing the `FZF_DEFAULT_OPTS` environment variable so your specific example may be different depending if you already use that variable.
 
-Copy the contents of `dist/*.sh` to `~/.profile` or similar.
+**POSIX shells**
+
+You need to export `FZF_DEFAULT_OPTS` variable with the `--colors` options as value as provided in `dist/*.sh` files.
+
+Either simply source selected variant's `.sh` file or copy the contents to your profile file, e.g. `.profile` for bash or `.zshrc` for zsh
 
 **Fish**
+
+Similiar to above you need to set the `FZF_DEFAULT_OPTS` variable.
 
 Copy the contents of `dist/*.fish` to `~/.config/fish/config.fish` or create a
 custom function:
